@@ -86,33 +86,7 @@ if (typingElement) {
 
 
 
-// Contact form handling
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        const name = document.getElementById('fullName').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const message = document.getElementById('message').value.trim();
-        
-        if (!name || !email || !message) {
-            e.preventDefault();
-            alert('Please fill in all fields.');
-            return;
-        }
-        
-        // Show success message
-        setTimeout(() => {
-            alert('Thank you! Your message has been sent successfully.');
-        }, 100);
-    });
-}
 
-// Check for form submission success
-if (window.location.hash === '#contact' && document.referrer.includes(window.location.hostname)) {
-    setTimeout(() => {
-        alert('Thank you! Your message has been sent successfully.');
-    }, 500);
-}
 
 // Dynamic footer year
 function getCurrentYear() {
