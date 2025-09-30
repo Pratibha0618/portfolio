@@ -99,9 +99,6 @@ if (contactForm) {
             alert('Please fill in all fields.');
             return;
         }
-        
-        // Let Netlify handle the form submission
-        alert('Thank you for your message! I will get back to you soon.');
     });
 }
 
