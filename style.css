@@ -557,6 +557,16 @@ body {
     text-decoration: underline;
 }
 
+.contact-options {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.contact-options p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
 .contact form input:focus,
 .contact form textarea:focus {
     border-color: rgba(0, 239, 255, 0.5);
