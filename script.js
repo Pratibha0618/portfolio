@@ -99,7 +99,19 @@ if (contactForm) {
             alert('Please fill in all fields.');
             return;
         }
+        
+        // Show success message
+        setTimeout(() => {
+            alert('Thank you! Your message has been sent successfully.');
+        }, 100);
     });
+}
+
+// Check for form submission success
+if (window.location.hash === '#contact' && document.referrer.includes(window.location.hostname)) {
+    setTimeout(() => {
+        alert('Thank you! Your message has been sent successfully.');
+    }, 500);
 }
 
 // Dynamic footer year
