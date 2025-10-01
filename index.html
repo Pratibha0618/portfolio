@@ -32,18 +32,44 @@
             <div class="hero-text">
                 <h3>Hi, there</h3>
                 <h1>I am Pratibha Malpotra</h1>
-                <p>B.Tech in IT @NITJ | Ex-SDE @Avalara</p>
+                <p>Software Engineer building reliable, observable web backends and crisp React frontends.</p>
+                <div class="tech-stack">
+                    <span>Node • Java • Spring Boot • React • AWS • Grafana • CI/CD</span>
+                </div>
 
                 <div class="social-media">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/nightfury4532/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/pratibha-malpotra-9a5873201" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Pratibha0618" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://leetcode.com/u/nightfury9/" target="_blank" class="leetcode-icon">
+                        <svg viewBox="0 0 24 24" width="20" height="20">
+                            <path fill="currentColor" d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.036l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039z"/>
+                            <path fill="currentColor" d="M7.5 12h11a1.5 1.5 0 0 1 0 3h-11a1.5 1.5 0 0 1 0-3z"/>
+                        </svg>
+                    </a>
                 </div>
-                <a href="https://drive.google.com/file/d/13T_4Mf-cUjiHCHIJJV8dnSjTcxlVILgk/view?usp=sharing" class="btn">View Resume</a>
+                <a href="https://drive.google.com/file/d/1oKbDXXCfoMGjkeyd62Ab7jlLReB4waTK/view?usp=sharing" class="btn" target="_blank">View Resume</a>
             </div>
             <div class="hero-img">
-                <div class="profile-img"></div>
+                <canvas id="particleCanvas" class="particle-canvas"></canvas>
+                <svg class="particle-fallback" viewBox="0 0 400 400" style="display: none;">
+                    <defs>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <circle cx="100" cy="100" r="3" fill="#64ffda" filter="url(#glow)"/>
+                    <circle cx="300" cy="150" r="3" fill="#64ffda" filter="url(#glow)"/>
+                    <circle cx="200" cy="250" r="3" fill="#64ffda" filter="url(#glow)"/>
+                    <circle cx="150" cy="300" r="3" fill="#64ffda" filter="url(#glow)"/>
+                    <line x1="100" y1="100" x2="300" y2="150" stroke="#64ffda" stroke-width="1" opacity="0.3"/>
+                    <line x1="300" y1="150" x2="200" y2="250" stroke="#64ffda" stroke-width="1" opacity="0.3"/>
+                    <line x1="200" y1="250" x2="150" y2="300" stroke="#64ffda" stroke-width="1" opacity="0.3"/>
+                </svg>
             </div>
         </div>
     </section>
@@ -136,7 +162,10 @@
                 <div class="portfolio-layer">
                     <h4>Harvest Harmony</h4>
                     <p>Grocery tracking and budget analytics app</p>
-                    <a href="https://harvestharmony.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    <div class="portfolio-links">
+                        <a href="https://harvestharmony.netlify.app/" class="portfolio-btn" target="_blank">Demo</a>
+                        <a href="https://github.com/Pratibha0618/harvest-harmony-log" class="portfolio-btn" target="_blank">GitHub</a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-box">
@@ -144,7 +173,10 @@
                 <div class="portfolio-layer">
                     <h4>Memory Map</h4>
                     <p>Interactive geospatial journaling app</p>
-                    <a href="https://memory-mapping-app.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    <div class="portfolio-links">
+                        <a href="https://memory-mapping-app.netlify.app/" class="portfolio-btn" target="_blank">Demo</a>
+                        <a href="https://github.com/Pratibha0618/memory-mapping-app" class="portfolio-btn" target="_blank">GitHub</a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-box">
@@ -152,7 +184,10 @@
                 <div class="portfolio-layer">
                     <h4>BlueSkies</h4>
                     <p>Real-time weather app</p>
-                    <a href="https://beautiful-pudding-463ad8.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    <div class="portfolio-links">
+                        <a href="https://beautiful-pudding-463ad8.netlify.app/" class="portfolio-btn" target="_blank">Demo</a>
+                        <a href="https://github.com/Pratibha0618/BlueSkies" class="portfolio-btn" target="_blank">GitHub</a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-box">
@@ -160,7 +195,10 @@
                 <div class="portfolio-layer">
                     <h4>Disney+</h4>
                     <p>Disney+ clone</p>
-                    <a href="https://splendorous-pegasus-ae19b6.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    <div class="portfolio-links">
+                        <a href="https://splendorous-pegasus-ae19b6.netlify.app/" class="portfolio-btn" target="_blank">Demo</a>
+                        <a href="https://github.com/Pratibha0618/disney-hotstar-clone" class="portfolio-btn" target="_blank">GitHub</a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-box">
@@ -168,7 +206,10 @@
                 <div class="portfolio-layer">
                     <h4>Snake Game</h4>
                     <p>Classic Snake game</p>
-                    <a href="https://ephemeral-alpaca-d3f845.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    <div class="portfolio-links">
+                        <a href="https://ephemeral-alpaca-d3f845.netlify.app/" class="portfolio-btn" target="_blank">Demo</a>
+                        <a href="https://github.com/Pratibha0618/snake-game" class="portfolio-btn" target="_blank">GitHub</a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-box">
@@ -176,7 +217,10 @@
                 <div class="portfolio-layer">
                     <h4>Memory Game</h4>
                     <p>Classic memory game</p>
-                    <a href="https://dapper-quokka-779cfb.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    <div class="portfolio-links">
+                        <a href="https://dapper-quokka-779cfb.netlify.app/" class="portfolio-btn" target="_blank">Demo</a>
+                        <a href="https://github.com/Pratibha0618/memory-card-game" class="portfolio-btn" target="_blank">GitHub</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -198,6 +242,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="particles.js"></script>
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
