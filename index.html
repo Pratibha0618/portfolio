@@ -230,9 +230,56 @@
     </section>
 
     <section id="contact" class="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-        <p>Mail me at <a href="mailto:pratibha.akm@gmail.com">pratibha.akm@gmail.com</a></p>
-
+        <h2 class="heading">Get In <span>Touch</span></h2>
+        <p class="contact-subtitle">Let's discuss opportunities and build something amazing together!</p>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>pratibha.akm@gmail.com</p>
+                    <a href="mailto:pratibha.akm@gmail.com" class="contact-link">Send Email</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Let's connect professionally</p>
+                    <a href="https://www.linkedin.com/in/pratibha-malpotra-9a5873201" target="_blank" class="contact-link">Connect</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Check out my projects</p>
+                    <a href="https://github.com/Pratibha0618" target="_blank" class="contact-link">View Profile</a>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <form name="contact" method="POST" data-netlify="true" class="contact-form" netlify-honeypot="bot-field" action="thank-you.html">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p style="display: none;"><input name="bot-field"></p>
+                    <div class="input-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                    <button type="submit" class="btn contact-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
